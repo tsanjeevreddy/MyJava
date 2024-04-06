@@ -1,8 +1,10 @@
-package com.dts.core.program;
+package com.dts.core.program.array;
 
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.dts.core.model.Student;
 
 public class CompareTwoArrays {
     public static void main(String[] args) {

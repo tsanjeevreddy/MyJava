@@ -1,4 +1,4 @@
-package com.dts.core.program;
+package com.dts.core.model;
 
 public class Student {
     private int studentId;
