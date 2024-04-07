@@ -4,7 +4,7 @@ import java.io.*;
 
 public class FileStreamTest {
     public static void main(String[] as) {
-        String path = "/Users/dtsreddy/Desktop/test";
+        String path = "/Users/{userName}/Desktop/test";
         File file = new File(path+ "/testFile.txt");
 
         if(file.isFile() && file.length()>0){
