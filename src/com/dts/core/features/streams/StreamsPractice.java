@@ -64,16 +64,12 @@ public class StreamsPractice {
         random22.ints().limit(10000).forEach(System.out::println);
         System.out.println("------------------------------ Time Took in MS: " + Duration.between(start, Instant.now()));
 
-
         List<String> strings123 = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
         List<String> filtered = strings123.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
 
         System.out.println("Filtered List: " + filtered);
         String mergedString = strings123.stream().filter(string -> !string.isEmpty()).collect(Collectors.joining(",   "));
         System.out.println("Merged String: " + mergedString);
-
-
-
 
         List numbers2222 = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
 

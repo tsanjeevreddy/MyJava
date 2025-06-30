@@ -1,13 +1,10 @@
 package com.dts.core.program.number;
 
-import java.util.Scanner;
+import com.dts.core.program.utill.Console;
 
 public class PrimeNumber {
     public static void main(String[] as) {
-        Scanner sc = new Scanner(System.in);
-        Integer number = Integer.parseInt(sc.nextLine());
-        sc.close();
-        findFactor(number);
+        findFactor(Console.takeIntFromConsole());
     }
 
     public static void findFactor(Integer number) {

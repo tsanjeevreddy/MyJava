@@ -1,9 +1,7 @@
 package com.dts.core.program.threads;
 
 public class ThreadSimple extends Thread {
-
     private String name;
-
     ThreadSimple(String name) {
         this.name = name;
     }
@@ -14,14 +12,14 @@ public class ThreadSimple extends Thread {
     }
 
     public static void main(String[] as) {
-        Thread t1 = new ThreadSimple("My First Thread1...");
-        t1.start();
+        ThreadSimple threadSimple = new ThreadSimple("My First Thread1...");
+        threadSimple.start();
         // try {
         // t1.sleep(1000);
         // } catch (InterruptedException e) {
         // e.printStackTrace();
         // }
-        System.out.println(t1.getName());
+        System.out.println(threadSimple.getName());
     }
 
 }

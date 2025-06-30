@@ -20,9 +20,17 @@ public class Console {
     public static String takeStringFromConsole() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String for Program: ");
-        String retString = sc.nextLine();
+        String value = sc.nextLine();
         sc.close();
-        return retString;
+        return value;
+    }
+
+    public static Integer takeIntFromConsole() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Integer value: ");
+        Integer value = sc.nextInt();
+        sc.close();
+        return value;
     }
 
 }

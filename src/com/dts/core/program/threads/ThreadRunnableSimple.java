@@ -8,8 +8,8 @@ public class ThreadRunnableSimple implements Runnable {
     }
 
     public static void main(String[] as) {
-        Runnable r1 = new ThreadRunnableSimple();
-        Thread t1 = new Thread(r1, "My New Runnable Thread..");
+        ThreadRunnableSimple threadRunnableSimple = new ThreadRunnableSimple();
+        Thread t1 = new Thread(threadRunnableSimple, "My New Runnable Thread..");
         t1.start();
         System.out.println(t1.getName());
     }
